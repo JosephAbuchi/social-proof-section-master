@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, bottom right;
+  background-repeat: no-repeat no-repeat;
+}
+
+/* UPPER PART STYLE STARTS */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 8rem;
+  margin-bottom: 0;
+}
+
+aside {
+  display: flex;
+}
+
+aside .right-box {
+  width: 50%;
+}
+
+aside .right-box h1 {
+  margin-top: 0;
+  font-size: 45px;
+  width: 20rem;
+  color: hsl(300, 43%, 22%);
+}
+
+aside .right-box p {
+  font-size: 15px;
+  width: 23rem;
+  line-height: 1.5;
+  color: hsl(300, 43%, 22%);
+}
+
+aside .left-box {
+  width: 50%;
+}
+
+aside .left-box p {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  padding-left: 1.5rem;
+}
+
+aside .left-box img {
+  width: 15px;
+  object-fit: contain;
+}
+
+aside .left-box .img {
+  margin-top: 15px;
+}
+
+aside .left-box .reviews {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  gap: 5px;
+  padding-left: 1.5rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+aside .left-box .report-guru {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  gap: 5px;
+  padding-left: 1.5rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+aside .left-box .best-tech {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  gap: 5px;
+  padding-left: 1.5rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+}
+
+/* UPPER PART STYLE ENDS */
+
+
+/* BOTTOM PART STYLE STARTS */
+main {
+  display: flex;
+}
+
+main .user {
+  margin-top: 1.3rem;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: contain;
+  margin: 1rem;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(300, 24%, 96%);
+}
+
+main p {
+  margin: 0;
+  color: hsl(333, 80%, 67%);
+}
+
+main .span {
+  color: hsl(300, 24%, 96%);
+  line-height: 1.5;
+  width: 18.5rem;
+  padding-left: 1rem;
+}
+
+main .header {
+  display: flex;
+  gap: 10px;
+}
+
+main .colton-smith {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  height: 30vh;
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+  margin-right: 2rem;
+}
+
+main .irene-roberts {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  height: 30vh;
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+main .anne-wallace {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  height: 30vh;
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+  margin-top: 6rem;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    overflow: auto;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .main-container,
+  aside,
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  aside .right-box h1 {
+    text-align: center;
+    font-size: 35px;
+    width: 15rem;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+  }
+
+  aside .right-box p {
+    text-align: center;
+    width: 17.3rem;
+    margin-left: 2rem;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  aside .left-box .img {
+    display: block;
+    margin-left: 3.5rem;
+  }
+
+  aside .left-box p {
+    margin-top: 5px;
+  }
+
+  aside .left-box .reviews {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding-left: 3rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+  }
+
+  aside .left-box .report-guru {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+    padding-left: 3rem;
+  }
+
+  aside .left-box .report-guru p {
+    margin-left: -1rem;
+  }
+
+  aside .left-box .best-tech {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+    padding-left: 3rem;
+  }
+
+  aside .left-box .img {
+    padding-left: 1rem;
+  }
+
+  main .colton-smith {
+    width: 20rem;
+    margin-left: 2rem;
+    height: auto;
+    margin: 10px;
+    margin-top: 2rem;
+  }
+
+  main .irene-roberts {
+    width: 20rem;
+    margin-left: 2rem;
+    height: auto;
+    margin: 10px;
+  }
+
+  main .anne-wallace {
+    width: 20rem;
+    margin-left: 2rem;
+    height: auto;
+    margin: 10px;
+  }
+
+  main .span {
+    width: 17rem;
+
+  }
+
+
+
+
+
+
+
+
+}
